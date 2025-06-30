@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Inscription - ConsultConnect</title>
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <a href="inscription.html" class="dashboard-link">S'inscrire</a>
+      <a href="connexion.html">Se connecter</a>
+      <a href="dashboard.html">Tableau de bord</a>
+    </div>
+    <div class="branding">Créez votre compte</div>
+  </header>
+
+  <main style="max-width:400px; margin: 50px auto; background:white; padding: 30px; border-radius: 12px; box-shadow: 0 2px 10px rgb(0 0 0 / 0.1);">
+    <form>
+      <label for="name">Nom complet</label><br />
+      <input type="text" id="name" name="name" placeholder="Votre nom complet" required style="width:100%; padding:10px; margin: 10px 0 20px; border: 1px solid #ccc; border-radius: 6px;" />
+      
+      <label for="email">Adresse e-mail</label><br />
+      <input type="email" id="email" name="email" placeholder="exemple@domaine.com" required style="width:100%; padding:10px; margin: 10px 0 20px; border: 1px solid #ccc; border-radius: 6px;" />
+      
+      <label for="password">Mot de passe</label><br />
+      <input type="password" id="password" name="password" placeholder="Choisissez un mot de passe" required style="width:100%; padding:10px; margin: 10px 0 20px; border: 1px solid #ccc; border-radius: 6px;" />
+      
+      <label for="password_confirm">Confirmez le mot de passe</label><br />
+      <input type="password" id="password_confirm" name="password_confirm" placeholder="Confirmez votre mot de passe" required style="width:100%; padding:10px; margin: 10px 0 20px; border: 1px solid #ccc; border-radius: 6px;" />
+      
+      <button type="submit" class="btn-reserve" style="width:100%;">S'inscrire</button>
+    </form>
+  </main>
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ConsultConnect</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ffffff;
+      border-bottom: 1px solid #ddd;
+      padding: 10px 20px;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 20px;
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    .nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .nav a:hover {
+      background-color: #e3f2fd;
+    }
+
+    .dashboard-link {
+      background-color: #0077cc;
+      color: white !important;
+    }
+
+    .dashboard-link:hover {
+      background-color: #005fa3;
+    }
+
+    .main-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .hero h1 {
+      font-size: 28px;
+      color: #0077cc;
+      margin-bottom: 10px;
+    }
+
+    .search-bar {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .search-bar input {
+      width: 70%;
+      padding: 10px 15px;
+      border: 1px solid #ccc;
+      border-radius: 30px;
+      font-size: 16px;
+      outline: none;
+      transition: box-shadow 0.3s;
+    }
+
+    .search-bar input:focus {
+      box-shadow: 0 0 5px #0077cc;
+      border-color: #0077cc;
+    }
+
+    .categories {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 30px;
+    }
+
+    .category {
+      background: #eef6fb;
+      color: #0077cc;
+      border-radius: 20px;
+      padding: 8px 16px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .category:hover {
+      background-color: #d6e9fc;
+    }
+
+    .profiles {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .profile-card {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      padding: 15px;
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .profile-card:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .profile-card img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      border: 2px solid #0077cc;
+      object-fit: cover;
+    }
+
+    .profile-info h3 {
+      margin: 0 0 5px;
+      font-weight: 600;
+      color: #0077cc;
+    }
+
+    .profile-info p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    .badge {
+      background: #d1ecf1;
+      color: #0c5460;
+      font-size: 12px;
+      padding: 3px 8px;
+      border-radius: 8px;
+      display: inline-block;
+      margin-top: 8px;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">ConsultConnect</a>
+    <nav class="nav">
+      <a href="inscription.html">S'inscrire</a>
+      <a href="connexion.html">Se connecter</a>
+      <a href="dashboard.html" class="dashboard-link">Tableau de bord</a>
+    </nav>
+  </header>
+
+  <main class="main-container">
+    <section class="hero">
+      <h1>Une idée ? Un besoin ?</h1>
+      <p>Trouve ton expert en 3 clics parmi une communauté dynamique de professionnels.</p>
+    </section>
+
+    <div class="search-bar">
+      <input type="text" placeholder="Rechercher un service, une compétence, un profil..." />
+    </div>
+
+    <section class="categories">
+      <div class="category">🔍 Filtres</div>
+      <div class="category">🧹 Ménage</div>
+      <div class="category">🌱 Jardinage</div>
+      <div class="category">💻 Business</div>
+      <div class="category">🎓 Coaching</div>
+      <div class="category">🎨 Design</div>
+      <div class="category">🎧 Musique</div>
+      <div class="category">📚 Cours</div>
+    </section>
+
+    <section class="profiles">
+      <div class="profile-card">
+        <img src="Image/personna%201%20feminin.jpg" alt="Photo de Claire M." />
+        <div class="profile-info">
+          <h3>Claire M. — Coach de vie</h3>
+          <p>Spécialisée en reconversion professionnelle et développement personnel.</p>
+          <span class="badge">Populaire</span>
+        </div>
+      </div>
+      <div class="profile-card">
+        <img src="Image/personna%202%20mascu.jpg" alt="Photo de Samir T." />
+        <div class="profile-info">
+          <h3>Samir T. — Jardinier local</h3>
+          <p>Tonte, taille de haies, entretien de terrain - zone Metz et alentours.</p>
+          <span class="badge">Nouveau</span>
+        </div>
+      </div>
+      <div class="profile-card">
+        <img src="Image/personna%204%20mascu.jpg" alt="Photo de Léa P." />
+        <div class="profile-info">
+          <h3>Léa P. — Aide administrative</h3>
+          <p>Aide à la création d’entreprise, gestion micro-entrepreneur, rédaction de courriers.</p>
+          <span class="badge">Recommandée</span>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
